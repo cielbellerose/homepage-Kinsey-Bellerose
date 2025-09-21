@@ -10,49 +10,257 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Kinsey Bellerose</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">AI</a> <!--./AI.html-->
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kinsey Bellerose</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">AI</a>
+                  <!--./AI.html-->
+                </li>
+              </ul>
+              <span>
+                <a
+                  class="nav-link"
+                  href="https://github.com/cielbellerose"
+                  target="_blank"
+                >
+                  <i class="bi bi-github me-4"></i>
+                </a>
+              </span>
+              <span
+                ><a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/kinsey-bellerose/"
+                  target="_blank"
+                >
+                  <i class="bi bi-linkedin me-2"></i> </a
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <h1>Kinsey Bellerose's Home Page</h1>
+
+      <section>
+        <h2>Projects</h2>
+        <div id="projects" class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="project card">
+              <img
+                src="./images/portScanner.png"
+                class="card-img-top"
+                alt="..."
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+              <div class="card-body">
+                <h5 class="card-title">Network Port Scanner</h5>
+                <p class="card-text">
+                  TCP Connect Scanning with interactive GUI and real-time
+                  results
+                </p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button type="button" class="btn btn-info btn-disabled">
+                      Python
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info btn-disabled">
+                      PySide6
+                    </button>
+                  </div>
+                </div>
+                <a
+                  class="nav-link"
+                  href="https://github.com/cielbellerose"
+                  target="_blank"
+                >
+                  <i class="bi bi-github bi-card me-4"></i>
+                </a>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <div class="col">
+            <div class="project card">
+              <img src="./images/petalorn.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Unity FPS Game</h5>
+                <p class="card-text">
+                  FPS Group Final Project for CS3540 Game Programming @
+                  Northeastern University
+                </p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button type="button" class="btn btn-info btn-disabled">
+                      Unity
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info btn-disabled">
+                      C#
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <div class="col">
+            <div class="project card">
+              <img
+                src="./images/portScanner.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">FUSE File System</h5>
+                <p class="card-text">
+                  A read-only Unix-style file system implementation in C using
+                  FUSE (Filesystem in Userspace) for CS3650 Computer Systems @
+                  Northeastern University
+                </p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button type="button" class="btn btn-info btn-disabled">
+                      C
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info btn-disabled">
+                      Docker
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /card -->
           </div>
         </div>
-      </nav>
+      </section>
+      <!-- /projectSection -->
+
+      <section>
+        <h2>Experiences</h2>
+        <div id="experiences" class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="experience card">
+              <img
+                src="./images/finishline.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Northeastern Electric Racing</h5>
+                <p class="card-text">
+                  Full-stack developer for a project management dashboard and
+                  tech lead for rules dashboard
+                </p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button type="button" class="btn btn-info btn-disabled">
+                      React
+                    </button>
+                  </div>
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button type="button" class="btn btn-info btn-disabled">
+                      TypeScript
+                    </button>
+                  </div>
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button
+                      type="button disabled"
+                      class="btn btn-info btn-disabled"
+                    >
+                      Prisma ORM
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info btn-disabled">
+                      Postman
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+        </div>
+      </section>
+      <!-- /experienceSection -->
     </div>
     <script type="module" src="./js/main.js"></script>
     <script
