@@ -1,3 +1,4 @@
+## AI Generated Skills Page
 AI Used: Claude Opus 4.1  
  
 Prompt: I'm creating a personal website. I have two pages, index.html and education.html.  
@@ -20,3 +21,35 @@ AI Used: Deepseek
 
 Prompt: can you add the javascript for this?
 - attached skills.html, skills.css
+
+
+## Other uses of AI
+AI: Deepseek
+
+Prompt: walk me through how to make this "document.querySelector(".bi.bi-github:hover").style.color = color;" work for for this ".bi.bi-github,
+.bi.bi-linkedin {
+  font-size: 30px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.bi.bi-github:hover,
+.bi.bi-linkedin:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+" Why doesnt querySelector work for hover?
+
+Answer: The :hover pseudo-class is a CSS state, not a DOM element that JavaScript can select directly. When you use querySelector(".bi.bi-github:hover"), you're trying to select an element that is currently being hovered over, but:
+Timing issue: The hover state only exists when the user's mouse is physically over the element
+JavaScript can't select CSS states: querySelector looks for actual DOM elements, not temporary CSS states
+
+const githubIcon = document.querySelector(".bi.bi-github");
+
+githubIcon.addEventListener('mouseenter', function() {
+    this.style.color = color; // Your dynamic color
+});
+
+githubIcon.addEventListener('mouseleave', function() {
+    this.style.color = 'black'; // Reset to original color
+});

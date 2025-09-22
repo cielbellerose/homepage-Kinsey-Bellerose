@@ -1,5 +1,10 @@
 // --- Badge Color Selector ---
+let currentTextMode = "black";
+let currentColor = "#37586f";
+
 function updateCustomizableColor(color) {
+  currentColor = color;
+
   const badges = document.querySelectorAll(".badge");
   for (let i = 0; i < badges.length; i++) {
     badges[i].style.backgroundColor = color;
@@ -31,6 +36,32 @@ function updateCustomizableColor(color) {
   }
 }
 
+function updateCustomizableColorGithub(color) {
+  document.querySelector(".bi.bi-github").style.color = color;
+  console.log("GitHub icon color updated to:", color);
+}
+
+function updateCustomizableColorLinkedin(color) {
+  document.querySelector(".bi.bi-linkedin").style.color = color;
+  console.log("LinkedIn icon color updated to:", color);
+}
+
+const githubIcon = document.querySelector(".bi.bi-github");
+githubIcon.addEventListener("mouseenter", () =>
+  updateCustomizableColorGithub(currentColor)
+);
+githubIcon.addEventListener("mouseleave", () =>
+  updateCustomizableColorGithub(currentTextMode)
+);
+
+const linkedinIcon = document.querySelector(".bi.bi-linkedin");
+linkedinIcon.addEventListener("mouseenter", () =>
+  updateCustomizableColorLinkedin(currentColor)
+);
+linkedinIcon.addEventListener("mouseleave", () =>
+  updateCustomizableColorLinkedin(currentTextMode)
+);
+
 document
   .querySelector(".red-button-special")
   .addEventListener("click", () => updateCustomizableColor("#800000"));
@@ -57,6 +88,7 @@ let isDark = false;
 
 function setDarkMode() {
   isDark = !isDark; // switch state
+  currentTextMode = isDark ? "white" : "black";
   document.querySelector("body").style.backgroundColor = isDark
     ? "#121212"
     : "#ffffff";
@@ -70,6 +102,10 @@ function setDarkMode() {
   cards.forEach((card) => {
     card.style.borderColor = isDark ? "#121212" : "#ffffff";
   });
+  const stars = document.querySelectorAll(".bi.bi-star.bi-star-color");
+  for (let x = 0; x < stars.length; x++) {
+    stars[x].style.color = isDark ? "#ffffff" : "#121212";
+  }
 
   document.querySelector("body").style.color = isDark ? "#ffffff" : "#000000"; // Text color switch
   document.querySelector(".navbar-brand").style.color = isDark
