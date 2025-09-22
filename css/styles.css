@@ -13,7 +13,6 @@ h2 {
   font-size: 5vw;
   font-weight: 800;
   color: #37586f;
-  /* text-shadow: 4px 4px 4px white; */
   text-shadow:
   2px 2px 0 white,
   -2px 2px 0 white,
@@ -198,6 +197,10 @@ hr.border-x-axis {
   letter-spacing: 5px;
 }
 
+.bi.bi-star {
+  color: black;
+}
+
 .bi.bi-circle-fill {
   font-size: 25px;
   transition: all 0.3s ease;
@@ -216,8 +219,31 @@ hr.border-x-axis {
   transform: scale(1.1);
 }
 
+#Activities {
+  margin-bottom: -20px;
+  padding-bottom: 0px;
+}
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding: 10px;
+}
+
+.carousel-card .card .card-body{
+  width: 500px;
+}
+
+.carousel-title {
+  font-weight: 600;
+  color: #37586f;
+  padding-bottom: 3px;
+  border-bottom: 4px solid #37586f;
+}
+
 .activity-section {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .card-column {
@@ -237,13 +263,6 @@ hr.border-x-axis {
   transform: scale(1.1);
 }
 
-.carousel {
-  padding-top: 50px;
-}
-
-.carousel-indicators.carousel-black {
-  color: black;
-}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -366,7 +385,7 @@ hr.border-x-axis {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 535px) {
   .class-chart {
     display:none;
   }
