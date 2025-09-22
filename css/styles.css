@@ -1,18 +1,106 @@
-h1 {
-  margin-top: 20px;
-}
-
 h3,
 h2 {
-  margin: 20px 0px;
+  margin: 40px 0px 20px 0px;
+  font-weight: 600;
 }
 
-.btn-info.btn-disabled {
-  cursor: default;
+.navbar .container-fluid {
+  margin: 0px 60px;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #ffffff;
+}
+
+.badge {
+  background-color: #31a5ee;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.05);
 }
 
 .card-body {
   background-color: #d9d9d9;
+}
+
+.image-title {
+  font-size: 5vw;
+  color: rgb(167, 231, 255);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.edu-title {
+  margin-top: 80px;
+}
+
+.container-home-intro {
+  background-image: url("../images/scotland.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -5px;
+  height: 450px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.container-education {
+  background-image: url("../images/boston.png");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.container-intro-body {
+  margin: 0px 70px;
+}
+
+.intro-hi {
+  margin: 0px;
+  margin-top: 45px;
+  font-size: 25px;
+  color: rgb(55, 55, 55);
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 25px;
+  color: rgb(55, 55, 55);
+  font-weight: 600;
+}
+
+.intro-photo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-right: 25px;
+  transition: all 0.3s ease;
+}
+
+.intro-photo-container:hover {
+  transform: scale(1.05);
+}
+
+.intro-img {
+  border: 4px solid black;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 #projects {
@@ -29,19 +117,25 @@ h2 {
   color: black;
 }
 
+/* header icons */
 .bi.bi-github,
 .bi.bi-linkedin {
   font-size: 30px;
-  color: purple;
+  color: black;
 }
 
 .bi.bi-circle-fill {
-  font-size: 20px;
+  font-size: 25px;
+  transition: all 0.3s ease;
 }
 
 .bi.bi-circle-fill.bi-purple {
-  font-size: 20px;
+  font-size: 25px;
   color: #bea1f7;
+}
+
+.bi.bi-circle-fill:hover {
+  transform: scale(1.1);
 }
 
 .carousel-indicators.carousel-black {
@@ -51,4 +145,92 @@ h2 {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
+}
+
+.class-chart {
+  background-color: white;
+  padding: 30px;
+}
+
+#semesters .col p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.degree-container .degree {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.degree-container .expected {
+  font-size: 13px;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.degree-container h3 {
+  margin-bottom: 10px;
+}
+#classes {
+  margin-top: 20px;
+}
+
+.tooltip-right + .tooltip.bs-tooltip-right {
+  margin-left: -10px;
+}
+
+.tooltip-right + .tooltip.bs-tooltip-right .tooltip-arrow {
+  left: 5px;
+}
+
+.dropdown-menu {
+  min-width: 50px;
+  width: 90px;
+}
+.dropdown-menu button {
+  padding: 10px;
+  width: 65px;
+  margin-left: 10px;
+  border: none;
+}
+
+.dropdown-menu button:hover {
+  padding: 10px;
+  width: 65px;
+}
+
+.red-button-special,
+.red-button-special:hover {
+  background-color: red;
+}
+
+.orange-button-special,
+.orange-button-special:hover {
+  background-color: orange;
+}
+
+.yellow-button-special,
+.yellow-button-special:hover {
+  background-color: yellow;
+}
+
+.green-button-special,
+.green-button-special:hover {
+  background-color: green;
+}
+
+.blue-button-special,
+.blue-button-special:hover {
+  background-color: blue;
+}
+
+.purple-button-special,
+.purple-button-special:hover {
+  background-color: purple;
+}
+
+.full-width-footer {
+  width: 100%;
+  float: right;
 }
