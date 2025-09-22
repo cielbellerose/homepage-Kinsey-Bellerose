@@ -4,9 +4,9 @@
 CS5610 Project 1 – Personal Homepage  
 
 - **Author:** Kinsey Bellerose  
-- **Class Link:** [Education Page](https://kinsey-bellerose.netlify.app/education)  
-- **Course Info:** [Web Development – Fall 2025](https://johnguerra.co/classes/webDevelopment_fall_2025/)  
-- **Design Document:** [Google Doc](https://docs.google.com/document/d/1rfnBsF8RQb35-nA6rQmTBfWEivgEDgiaIbix_seWexo/edit?tab=t.0#heading=h.hwfv1zqp4m6o)  
+- **Class Link:** https://kinsey-bellerose.netlify.app/education
+- **Course Info:** https://johnguerra.co/classes/webDevelopment_fall_2025/
+- **Design Document:** https://docs.google.com/document/d/1rfnBsF8RQb35-nA6rQmTBfWEivgEDgiaIbix_seWexo/edit?tab=t.0#heading=h.hwfv1zqp4m6o 
 
 ---
 
@@ -17,6 +17,17 @@ The goal of this project is to design and implement a **personal homepage** that
 - **Homepage (`index.html`)** – Introduction and project highlights  
 - **Education (`education.html`)** – Courses and activities with an interactive course viewer chart  
 - **Skills (`skills.html`)** – AI-generated skills overview, styled with custom CSS  
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5 – Page structure
+- CSS3 (Custom Styles) – Layout and styling
+- JavaScript – Interactivity and dynamic features
+- Netlify – Deployment and hosting
+- ESLint & Prettier – Code quality and formatting
+- VSCode + Live Server – Development environment and local testing
 
 ---
 
