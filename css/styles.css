@@ -1,6 +1,6 @@
 h3,
 h2 {
-  margin: 70px 0px 30px 0px;
+  margin: 30px 0px 30px 0px;
   font-weight: 800;
 }
 
@@ -14,10 +14,10 @@ h2 {
   font-weight: 800;
   color: #37586f;
   text-shadow:
-  2px 2px 0 white,
-  -2px 2px 0 white,
-  -2px -2px 0 white,
-  2px -2px 0 white;
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white;
   letter-spacing: 2px;
 }
 
@@ -60,7 +60,6 @@ body {
 .btn.moon-button:hover {
   transform: scale(1.1);
 }
-
 
 /* header icons */
 .bi.bi-github,
@@ -131,8 +130,9 @@ body {
   background-color: #d9d9d9;
 }
 
-#projects, #experiences {
-  margin-bottom: 80px;
+#projects,
+#experiences {
+  margin-bottom: 60px;
 }
 
 .card {
@@ -175,6 +175,28 @@ hr.special-border {
   padding-bottom: 30px;
 }
 
+.activity-border-img {
+  background-image: url("../images/mountains.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 130%;
+  margin-top: 20px;
+  margin-left: -100px;
+  border: 25px solid black;
+}
+
+.activity-border-img2 {
+  background-image: url("../images/field.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 130%;
+  margin-top: -20px;
+  margin-left: -100px;
+  border: 25px solid black;
+}
+
 hr.border-x-axis {
   border-top: 5px solid black;
   transition: all 0.3s ease;
@@ -183,10 +205,10 @@ hr.border-x-axis {
 .edu-title {
   margin-top: 150px;
   text-shadow:
-  2px 2px 0 white,
-  -2px 2px 0 white,
-  -2px -2px 0 white,
-  2px -2px 0 white;
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white;
   letter-spacing: 5px;
 }
 
@@ -214,9 +236,11 @@ hr.border-x-axis {
 }
 
 #Activities {
-  margin-bottom: -20px;
+  margin-top: 40px;
+  margin-bottom: -10px;
   padding-bottom: 0px;
 }
+
 .carousel-card {
   display: flex;
   justify-content: center;
@@ -225,7 +249,7 @@ hr.border-x-axis {
   padding: 10px;
 }
 
-.carousel-card .card .card-body{
+.carousel-card .card .card-body {
   width: 500px;
 }
 
@@ -234,10 +258,6 @@ hr.border-x-axis {
   color: #37586f;
   padding-bottom: 3px;
   border-bottom: 4px solid #37586f;
-}
-
-.activity-section {
-  padding-bottom: 50px;
 }
 
 .card-column {
@@ -257,7 +277,6 @@ hr.border-x-axis {
   transform: scale(1.1);
 }
 
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
@@ -265,7 +284,7 @@ hr.border-x-axis {
 
 .class-chart {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .class-table {
@@ -354,9 +373,8 @@ hr.border-x-axis {
 }
 .pink-button-special,
 .pink-button-special:hover {
-  background-color: #9F2B68;
+  background-color: #9f2b68;
 }
-
 
 @media (max-width: 975px) {
   .intro-img {
@@ -381,10 +399,10 @@ hr.border-x-axis {
 
 @media (max-width: 535px) {
   .class-chart {
-    display:none;
+    display: none;
   }
   .special-border {
-    display:none;
+    display: none;
   }
 
   .class-table {

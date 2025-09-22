@@ -15,6 +15,7 @@ function updateCustomizableColor(color) {
   }
 
   document.querySelector(".image-title").style.color = color;
+
   const introImg = document.querySelector(".intro-img");
   if (introImg) introImg.style.borderColor = color;
 
@@ -34,6 +35,9 @@ function updateCustomizableColor(color) {
   for (let x = 0; x < dividers.length; x++) {
     dividers[x].style.borderColor = color;
   }
+
+  document.querySelector(".activity-border-img").style.borderColor = color;
+  document.querySelector(".activity-border-img2").style.borderColor = color;
 }
 
 function updateCustomizableColorGithub(color) {
