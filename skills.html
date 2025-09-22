@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kinsey Bellerose - Skills</title>
+    <title>Kinsey Bellerose's Skills</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,12 +20,10 @@
   <body>
     <div class="container-skills-intro">
       <div class="container-intro-body">
-        <div class="row g-4 align-items-center">
+        <div class="row">
           <div class="col text-center">
-            <h1 class="skills-title">Technical Skills</h1>
-            <p class="skills-subtitle">
-              Building robust solutions with modern technologies
-            </p>
+            <h1 class="image-title skills-title">Technical Skills</h1>
+            <p class="skills-subtitle">Building modern solutions with cutting-edge technologies</p>
           </div>
         </div>
       </div>
@@ -33,7 +31,7 @@
 
     <div class="container">
       <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Kinsey Bellerose</a>
             <button
@@ -50,9 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./index.html"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./education.html">Education</a>
@@ -92,184 +88,247 @@
       <!-- Skills Grid Section -->
       <section class="skills-section">
         <div class="skills-grid">
-          <!-- Programming Languages -->
+          
+          <!-- Programming Languages Card -->
           <div class="skill-card languages-card">
-            <div class="card-header">
-              <i class="bi bi-code-slash skill-icon"></i>
-              <h3>Programming Languages</h3>
+            <div class="card-icon">
+              <i class="bi bi-code-slash"></i>
             </div>
+            <h3 class="card-title">Programming Languages</h3>
             <div class="skill-items">
-              <div class="skill-item" data-proficiency="expert">
-                <span class="skill-name">TypeScript</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
+              <div class="skill-item" data-skill="typescript">
+                <i class="bi bi-filetype-tsx"></i>
+                <span>TypeScript</span>
+                <div class="skill-level" data-level="90"></div>
               </div>
-              <div class="skill-item" data-proficiency="expert">
-                <span class="skill-name">Java</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
+              <div class="skill-item" data-skill="java">
+                <i class="bi bi-filetype-java"></i>
+                <span>Java</span>
+                <div class="skill-level" data-level="85"></div>
               </div>
-              <div class="skill-item" data-proficiency="advanced">
-                <span class="skill-name">Python</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%"></div>
-                </div>
+              <div class="skill-item" data-skill="python">
+                <i class="bi bi-filetype-py"></i>
+                <span>Python</span>
+                <div class="skill-level" data-level="80"></div>
               </div>
-              <div class="skill-item" data-proficiency="advanced">
-                <span class="skill-name">C++</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
+              <div class="skill-item" data-skill="cpp">
+                <i class="bi bi-filetype-cpp"></i>
+                <span>C++</span>
+                <div class="skill-level" data-level="75"></div>
               </div>
-              <div class="skill-item" data-proficiency="expert">
-                <span class="skill-name">CSS</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
+              <div class="skill-item" data-skill="css">
+                <i class="bi bi-filetype-css"></i>
+                <span>CSS</span>
+                <div class="skill-level" data-level="85"></div>
               </div>
             </div>
           </div>
 
-          <!-- Frontend -->
+          <!-- Frontend Card -->
           <div class="skill-card frontend-card">
-            <div class="card-header">
-              <i class="bi bi-palette skill-icon"></i>
-              <h3>Frontend</h3>
+            <div class="card-icon">
+              <i class="bi bi-palette"></i>
             </div>
-            <div class="skill-items">
-              <div class="skill-bubble-container">
-                <div class="skill-bubble large">
-                  <i class="bi bi-filetype-jsx"></i>
-                  <span>React</span>
-                </div>
-                <div class="skill-bubble medium">
-                  <i class="bi bi-arrow-right-circle"></i>
-                  <span>Next.js</span>
-                </div>
+            <h3 class="card-title">Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="badge skill-badge">React</span>
+              <span class="badge skill-badge">Next.js</span>
+            </div>
+            <div class="tech-stack-visual">
+              <div class="stack-item react-item">
+                <i class="bi bi-layers"></i>
+                <span>React Components</span>
+              </div>
+              <div class="stack-item next-item">
+                <i class="bi bi-lightning-charge"></i>
+                <span>Next.js SSR/SSG</span>
               </div>
             </div>
           </div>
 
-          <!-- Backend -->
+          <!-- Backend Card -->
           <div class="skill-card backend-card">
-            <div class="card-header">
-              <i class="bi bi-server skill-icon"></i>
-              <h3>Backend</h3>
+            <div class="card-icon">
+              <i class="bi bi-server"></i>
             </div>
-            <div class="skill-items">
-              <div class="skill-hexagon-grid">
-                <div class="skill-hexagon">
-                  <div class="hexagon-inner">
-                    <span>Node.js</span>
-                  </div>
-                </div>
-                <div class="skill-hexagon">
-                  <div class="hexagon-inner">
-                    <span>Express.js</span>
-                  </div>
-                </div>
-                <div class="skill-hexagon">
-                  <div class="hexagon-inner">
-                    <span>Prisma</span>
-                  </div>
-                </div>
-                <div class="skill-hexagon">
-                  <div class="hexagon-inner">
-                    <span>PostgreSQL</span>
-                  </div>
-                </div>
+            <h3 class="card-title">Backend Development</h3>
+            <div class="backend-flow">
+              <div class="flow-item">
+                <i class="bi bi-node"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="flow-connector">→</div>
+              <div class="flow-item">
+                <i class="bi bi-box"></i>
+                <span>Express.js</span>
+              </div>
+              <div class="flow-connector">→</div>
+              <div class="flow-item">
+                <i class="bi bi-database"></i>
+                <span>Prisma</span>
+              </div>
+              <div class="flow-connector">→</div>
+              <div class="flow-item">
+                <i class="bi bi-hdd-stack"></i>
+                <span>PostgreSQL</span>
               </div>
             </div>
           </div>
 
-          <!-- Developer Tools -->
+          <!-- Developer Tools Card -->
           <div class="skill-card tools-card">
-            <div class="card-header">
-              <i class="bi bi-tools skill-icon"></i>
-              <h3>Developer Tools</h3>
+            <div class="card-icon">
+              <i class="bi bi-tools"></i>
             </div>
-            <div class="skill-items">
-              <div class="tool-tags">
-                <span class="tool-tag badge">
-                  <i class="bi bi-triangle"></i> Vercel
-                </span>
-                <span class="tool-tag badge">
-                  <i class="bi bi-git"></i> Git
-                </span>
-                <span class="tool-tag badge">
-                  <i class="bi bi-send"></i> Postman
-                </span>
+            <h3 class="card-title">Developer Tools</h3>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-triangle"></i>
+                </div>
+                <span>Vercel</span>
+              </div>
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-git"></i>
+                </div>
+                <span>Git</span>
+              </div>
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-send"></i>
+                </div>
+                <span>Postman</span>
               </div>
             </div>
           </div>
 
-          <!-- Certifications -->
+          <!-- Certifications Card -->
           <div class="skill-card cert-card">
-            <div class="card-header">
-              <i class="bi bi-award skill-icon"></i>
-              <h3>Certifications</h3>
+            <div class="card-icon">
+              <i class="bi bi-award"></i>
             </div>
-            <div class="skill-items">
-              <div class="certification">
-                <div class="cert-badge">
-                  <i class="bi bi-shield-check"></i>
-                </div>
-                <div class="cert-info">
-                  <h4>SANS GFACT</h4>
-                  <p>GIAC Foundational Cybersecurity Technologies</p>
+            <h3 class="card-title">Certifications</h3>
+            <div class="cert-badge">
+              <div class="cert-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="cert-info">
+                <h4>SANS GFACT</h4>
+                <p>Foundational Cybersecurity Technologies</p>
+                <div class="cert-verify">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified Credential</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Interactive Skills Cloud -->
-        <div class="skills-cloud-section">
-          <h3 class="text-center mb-4">All Technologies</h3>
-          <div class="skills-cloud">
-            <span class="cloud-tag badge" data-size="large">TypeScript</span>
-            <span class="cloud-tag badge" data-size="large">React</span>
-            <span class="cloud-tag badge" data-size="medium">Node.js</span>
-            <span class="cloud-tag badge" data-size="large">Java</span>
-            <span class="cloud-tag badge" data-size="medium">Python</span>
-            <span class="cloud-tag badge" data-size="small">C++</span>
-            <span class="cloud-tag badge" data-size="medium">CSS</span>
-            <span class="cloud-tag badge" data-size="small">Next.js</span>
-            <span class="cloud-tag badge" data-size="medium">Express.js</span>
-            <span class="cloud-tag badge" data-size="small">Prisma</span>
-            <span class="cloud-tag badge" data-size="medium">PostgreSQL</span>
-            <span class="cloud-tag badge" data-size="small">Vercel</span>
-            <span class="cloud-tag badge" data-size="large">Git</span>
-            <span class="cloud-tag badge" data-size="small">Postman</span>
-            <span class="cloud-tag badge" data-size="medium">GFACT</span>
+        </div>
+      </section>
+
+      <hr class="special-border" />
+
+      <!-- Interactive Skills Showcase -->
+      <section class="interactive-showcase">
+        <h2 class="showcase-title">Interactive Stack Explorer</h2>
+        <div class="stack-explorer">
+          <div class="explorer-controls">
+            <button class="stack-btn active" data-stack="fullstack">Full Stack</button>
+            <button class="stack-btn" data-stack="frontend">Frontend</button>
+            <button class="stack-btn" data-stack="backend">Backend</button>
+            <button class="stack-btn" data-stack="tools">Tools</button>
+          </div>
+          <div class="stack-display">
+            <div class="stack-content active" id="fullstack">
+              <div class="stack-visualization">
+                <div class="layer frontend-layer">
+                  <span>Frontend: React • Next.js • CSS</span>
+                </div>
+                <div class="layer api-layer">
+                  <span>API: Express.js • Node.js</span>
+                </div>
+                <div class="layer orm-layer">
+                  <span>ORM: Prisma</span>
+                </div>
+                <div class="layer db-layer">
+                  <span>Database: PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-content" id="frontend">
+              <div class="frontend-showcase">
+                <div class="showcase-item">
+                  <i class="bi bi-brush"></i>
+                  <span>Modern UI/UX Design</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-phone"></i>
+                  <span>Responsive Layouts</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-lightning"></i>
+                  <span>Performance Optimization</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-content" id="backend">
+              <div class="backend-showcase">
+                <div class="showcase-item">
+                  <i class="bi bi-shield-lock"></i>
+                  <span>Secure APIs</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-diagram-3"></i>
+                  <span>Database Design</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-speedometer2"></i>
+                  <span>Performance Tuning</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack-content" id="tools">
+              <div class="tools-showcase">
+                <div class="showcase-item">
+                  <i class="bi bi-cloud-upload"></i>
+                  <span>CI/CD Pipelines</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-code-square"></i>
+                  <span>Version Control</span>
+                </div>
+                <div class="showcase-item">
+                  <i class="bi bi-bug"></i>
+                  <span>API Testing</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
     </div>
 
-    <footer class="footer full-width-footer pull-right mt-auto py-3 bg-light">
-      <div class="container">
+    <footer class="footer full-width-footer py-3">
+      <div class="container text-end">
         <div class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Color
+            <!-- Color did not want to move left to align with the dropdown so this was my fix -->
+            Color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu dropdown-menu-end">
             <li>
               <button type="button" class="btn red-button-special"></button>
             </li>
             <li>
               <button type="button" class="btn orange-button-special"></button>
-            </li>
-            <li>
-              <button type="button" class="btn yellow-button-special"></button>
             </li>
             <li>
               <button type="button" class="btn green-button-special"></button>
@@ -280,10 +339,14 @@
             <li>
               <button type="button" class="btn purple-button-special"></button>
             </li>
-          </ul>
+            <li>
+              <button type="button" class="btn pink-button-special"></button>
+            </li>
+          </div>
         </div>
       </div>
     </footer>
+    
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/skills.js"></script>
     <script

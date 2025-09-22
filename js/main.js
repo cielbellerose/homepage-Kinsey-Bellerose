@@ -17,40 +17,6 @@ function updateCustomizableColor(color) {
     dividers[x].style.borderColor = color;
   }
 
-  // --- AI generated content for skills page ---
-
-  // Update skill progress bars
-  const progressBars = document.querySelectorAll(".skill-progress");
-  for (let i = 0; i < progressBars.length; i++) {
-    progressBars[i].style.background = color;
-  }
-
-  // Update skill bubbles
-  const bubbles = document.querySelectorAll(".skill-bubble");
-  for (let i = 0; i < bubbles.length; i++) {
-    bubbles[i].style.background = color;
-  }
-
-  // Update hexagons
-  const hexagons = document.querySelectorAll(".skill-hexagon");
-  for (let i = 0; i < hexagons.length; i++) {
-    hexagons[i].style.background = color;
-    // Update pseudo-elements through CSS variable
-    hexagons[i].style.setProperty("--hexagon-color", color);
-  }
-
-  // Update certification badge color
-  const certBadges = document.querySelectorAll(".cert-badge");
-  for (let i = 0; i < certBadges.length; i++) {
-    certBadges[i].style.color = color;
-  }
-
-  // Update skill card top border
-  const skillCards = document.querySelectorAll(".skill-card::before");
-  // Since pseudo-elements can't be directly accessed, we'll add a CSS variable approach
-  document.documentElement.style.setProperty("--accent-color", color);
-
-  // --- end of AI generated content for skills page ---
 }
 
 document
@@ -118,3 +84,218 @@ function setDarkMode() {
 document
   .querySelector(".moon-button")
   .addEventListener("click", () => setDarkMode());
+
+// AI Generated Scripts
+
+// skills.js - JavaScript for Skills Page Interactivity
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all interactive components
+    initSkillLevelAnimations();
+    initStackExplorer();
+    initSkillCardInteractions();
+    initTooltipEnhancements();
+    
+    // Add scroll animations for skill cards
+    initScrollAnimations();
+});
+
+// Skill Level Animation
+function initSkillLevelAnimations() {
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    // Create intersection observer to trigger animations when skills come into view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillLevel = entry.target.querySelector('.skill-level');
+                const skillWidth = skillLevel.getAttribute('data-level') + '%';
+                
+                // Animate the skill level bar
+                setTimeout(() => {
+                    skillLevel.style.width = skillWidth;
+                }, 200);
+                
+                // Stop observing after animation
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    // Observe each skill item
+    skillItems.forEach(item => {
+        observer.observe(item);
+    });
+}
+
+// Stack Explorer Functionality
+function initStackExplorer() {
+    const stackButtons = document.querySelectorAll('.stack-btn');
+    const stackContents = document.querySelectorAll('.stack-content');
+    
+    stackButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetStack = this.getAttribute('data-stack');
+            
+            // Remove active class from all buttons and contents
+            stackButtons.forEach(btn => btn.classList.remove('active'));
+            stackContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            this.classList.add('active');
+            document.getElementById(targetStack).classList.add('active');
+            
+            // Add a subtle animation effect
+            const activeContent = document.getElementById(targetStack);
+            activeContent.style.animation = 'none';
+            setTimeout(() => {
+                activeContent.style.animation = 'fadeIn 0.5s ease';
+            }, 10);
+        });
+    });
+}
+
+// Skill Card Interactions
+function initSkillCardInteractions() {
+    const skillCards = document.querySelectorAll('.skill-card');
+    
+    skillCards.forEach(card => {
+        // Add click effect
+        card.addEventListener('click', function() {
+            this.style.transform = 'translateY(-5px) scale(1.02)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-5px)';
+            }, 150);
+        });
+        
+        // Add keyboard navigation support
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+        
+        // Make cards focusable for accessibility
+        card.setAttribute('tabindex', '0');
+    });
+}
+
+// Enhanced Tooltips for Skill Items
+function initTooltipEnhancements() {
+    // Initialize Bootstrap tooltips if available
+    if (typeof bootstrap !== 'undefined') {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    }
+    
+    // Add custom tooltips for skill items
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    skillItems.forEach(item => {
+        const skillName = item.querySelector('span').textContent;
+        const skillLevel = item.querySelector('.skill-level').getAttribute('data-level');
+        
+        // Add custom tooltip on hover
+        item.addEventListener('mouseenter', function() {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'custom-tooltip';
+            tooltip.textContent = `${skillName}: ${skillLevel}% proficiency`;
+            tooltip.style.position = 'absolute';
+            tooltip.style.background = 'rgba(0,0,0,0.8)';
+            tooltip.style.color = 'white';
+            tooltip.style.padding = '5px 10px';
+            tooltip.style.borderRadius = '4px';
+            tooltip.style.fontSize = '0.8rem';
+            tooltip.style.zIndex = '1000';
+            tooltip.style.top = '-40px';
+            tooltip.style.left = '50%';
+            tooltip.style.transform = 'translateX(-50%)';
+            
+            this.style.position = 'relative';
+            this.appendChild(tooltip);
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            const tooltip = this.querySelector('.custom-tooltip');
+            if (tooltip) {
+                tooltip.remove();
+            }
+        });
+    });
+}
+
+// Scroll Animations for Skill Cards
+function initScrollAnimations() {
+    const skillCards = document.querySelectorAll('.skill-card');
+    
+    const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'slideInFromRight 0.6s ease-out forwards';
+                cardObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    skillCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateX(30px)';
+        cardObserver.observe(card);
+    });
+}
+
+// Additional utility functions for enhanced interactivity
+
+// Function to shuffle skill items (for a dynamic presentation)
+function shuffleSkillItems() {
+    const skillItemsContainers = document.querySelectorAll('.skill-items');
+    
+    skillItemsContainers.forEach(container => {
+        const items = Array.from(container.querySelectorAll('.skill-item'));
+        
+        // Shuffle the array
+        for (let i = items.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            container.appendChild(items[j]);
+        }
+    });
+}
+
+// Function to highlight a specific skill
+function highlightSkill(skillName) {
+    const allSkills = document.querySelectorAll('.skill-item');
+    
+    // Remove highlight from all skills
+    allSkills.forEach(skill => {
+        skill.style.background = '';
+        skill.style.boxShadow = '';
+    });
+    
+    // Highlight the specified skill
+    const targetSkill = Array.from(allSkills).find(skill => 
+        skill.querySelector('span').textContent.toLowerCase().includes(skillName.toLowerCase())
+    );
+    
+    if (targetSkill) {
+        targetSkill.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2))';
+        targetSkill.style.boxShadow = '0 4px 8px rgba(102, 126, 234, 0.3)';
+        
+        // Scroll to the skill
+        targetSkill.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+
+// Export functions for use in other modules if needed
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        initSkillLevelAnimations,
+        initStackExplorer,
+        initSkillCardInteractions,
+        initTooltipEnhancements,
+        shuffleSkillItems,
+        highlightSkill
+    };
+}

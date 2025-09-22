@@ -13,7 +13,13 @@ h2 {
   font-size: 5vw;
   font-weight: 800;
   color: #37586f;
-  text-shadow: 4px 4px 4px white;
+  /* text-shadow: 4px 4px 4px white; */
+  text-shadow:
+  2px 2px 0 white,
+  -2px 2px 0 white,
+  -2px -2px 0 white,
+  2px -2px 0 white;
+  letter-spacing: 2px;
 }
 
 body {
@@ -183,8 +189,13 @@ hr.border-x-axis {
 }
 
 .edu-title {
-  margin-top: 80px;
-  text-shadow: 4px 4px 4px black;
+  margin-top: 150px;
+  text-shadow:
+  2px 2px 0 white,
+  -2px 2px 0 white,
+  -2px -2px 0 white,
+  2px -2px 0 white;
+  letter-spacing: 5px;
 }
 
 .bi.bi-circle-fill {
@@ -242,6 +253,10 @@ hr.border-x-axis {
 .class-chart {
   width: 100%;
   padding-bottom: 100px;
+}
+
+.class-table {
+  display: none;
 }
 
 #semesters .col p {
@@ -348,5 +363,18 @@ hr.border-x-axis {
   .container-intro-body .row {
     padding-left: 0;
     margin: 0px -40px;
+  }
+}
+
+@media (max-width: 530px) {
+  .class-chart {
+    display:none;
+  }
+  .special-border {
+    display:none;
+  }
+
+  .class-table {
+    display: block;
   }
 }
