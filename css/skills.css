@@ -1,0 +1,508 @@
+/* AI Generated CSS for Skills.html */
+
+/* Skills Page Specific Styles */
+
+/* Header Section */
+.container-skills-intro {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 120px 0 60px;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-skills-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff22" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,101.3C672,96,768,128,864,138.7C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.skills-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+.skills-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  animation: slideInFromBottom 0.8s ease-out;
+}
+
+/* Skills Grid */
+.skills-section {
+  padding: 40px 0;
+  min-height: 60vh;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Skill Cards */
+.skill-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Programming Languages - Progress Bars */
+.skill-item {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 10px;
+  animation: growWidth 1.5s ease-out;
+  position: relative;
+}
+
+.skill-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+/* Frontend - Bubbles */
+.skill-bubble-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150px;
+}
+
+.skill-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 20px;
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.skill-bubble.large {
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+}
+
+.skill-bubble.medium {
+  width: 100px;
+  height: 100px;
+  animation-delay: 0.5s;
+}
+
+.skill-bubble i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.skill-bubble:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* Backend - Hexagons */
+.skill-hexagon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.skill-hexagon {
+  width: 100px;
+  height: 55px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  position: relative;
+  margin: 30px 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-hexagon:before,
+.skill-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.skill-hexagon:before {
+  bottom: 100%;
+  border-bottom: 28px solid #667eea;
+}
+
+.skill-hexagon:after {
+  top: 100%;
+  border-top: 28px solid #764ba2;
+}
+
+.hexagon-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+}
+
+.skill-hexagon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Developer Tools - Tags */
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.tool-tag {
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.tool-tag i {
+  margin-right: 8px;
+}
+
+.tool-tag:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Certifications */
+.certification {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.cert-badge {
+  font-size: 3rem;
+  margin-right: 20px;
+  color: #667eea;
+  animation: pulse 2s infinite;
+}
+
+.cert-info h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.cert-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.certification:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #fff, #f5f5f5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Cloud */
+.skills-cloud-section {
+  margin-top: 60px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 20px;
+}
+
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.cloud-tag {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  animation: floatRandom 4s ease-in-out infinite;
+}
+
+.cloud-tag[data-size="large"] {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+}
+
+.cloud-tag[data-size="medium"] {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.cloud-tag[data-size="small"] {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+.cloud-tag:hover {
+  transform: scale(1.1) rotate(-5deg);
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatRandom {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(3px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Dark Mode Support */
+body.dark-mode .skill-card {
+  background: #1e1e1e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card-header h3 {
+  color: #fff;
+}
+
+body.dark-mode .skill-name {
+  color: #ccc;
+}
+
+body.dark-mode .skill-bar {
+  background: #333;
+}
+
+body.dark-mode .certification {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+}
+
+body.dark-mode .cert-info h4 {
+  color: #fff;
+}
+
+body.dark-mode .cert-info p {
+  color: #aaa;
+}
+
+body.dark-mode .skills-cloud-section {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+}
+
+body.dark-mode .cloud-tag {
+  background: #333;
+  color: #667eea;
+}
+
+body.dark-mode .cloud-tag:hover {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-hexagon {
+    width: 80px;
+    height: 44px;
+    margin: 25px 8px;
+  }
+
+  .skill-hexagon:before,
+  .skill-hexagon:after {
+    border-left-width: 40px;
+    border-right-width: 40px;
+  }
+
+  .skill-hexagon:before {
+    border-bottom-width: 22px;
+  }
+
+  .skill-hexagon:after {
+    border-top-width: 22px;
+  }
+
+  .hexagon-inner {
+    font-size: 0.75rem;
+  }
+}

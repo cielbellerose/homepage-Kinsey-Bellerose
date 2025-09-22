@@ -21,7 +21,7 @@
       <div class="container-intro-body">
         <div class="row">
           <div class="col-auto">
-            <h2 class="intro-hi"> Hi, I'm </h2>
+            <h2 class="intro-hi">Hi, I'm</h2>
             <h1 class="image-title">Kinsey Bellerose</h1>
             <h2 class="intro">
               Software Developer and Computer Science <br />
@@ -43,7 +43,7 @@
 
     <div class="container">
       <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Kinsey Bellerose</a>
             <button
@@ -119,13 +119,17 @@
                 </p>
                 <span class="badge me-2"> Python </span>
                 <span class="badge me-2"> PySide6 </span>
-                <a
-                  class="nav-link"
-                  href="https://github.com/cielbellerose"
-                  target="_blank"
-                >
-                  <i class="bi bi-github bi-card me-4"></i>
-                </a>
+                <span>
+                  <button class="github-holder">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/cielbellerose/qt-port-scanner"
+                      target="_blank"
+                    >
+                      <i class="bi bi-github bi-card me-4"></i>
+                    </a>
+                  </button>
+                </span>
               </div>
             </div>
             <!-- /card -->
@@ -150,6 +154,17 @@
                 >
                   <span class="badge me-2"> Unity </span>
                   <span class="badge me-2"> C# </span>
+                  <span>
+                    <button class="github-holder">
+                      <a
+                        class="nav-link"
+                        href="https://github.com/cielbellerose/Petalorn"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github bi-card me-4"></i>
+                      </a>
+                    </button>
+                  </span>
                 </div>
               </div>
             </div>
@@ -157,11 +172,6 @@
           </div>
           <div class="col">
             <div class="project card">
-              <img
-                src="./images/portScanner.png"
-                class="card-img-top"
-                alt="Screenshot of port scanner project GUI"
-              />
               <div class="card-body">
                 <h5 class="card-title">FUSE File System</h5>
                 <p class="card-text">
@@ -176,6 +186,35 @@
                 >
                   <span class="badge me-2"> C </span>
                   <span class="badge me-2"> Docker </span>
+                  <span>
+                    <button class="github-holder">
+                      <a
+                        class="nav-link"
+                        href="https://github.com/cielbellerose/FUSE-file-system-lab"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github bi-card me-4"></i>
+                      </a>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="project card card-column">
+              <div class="card-body">
+                <h5 class="card-title">Kotlin Flashcard Tool</h5>
+                <p class="card-text">
+                  Flashcard study tool built in Kotlin, with automated tests and
+                  machine learning algorithms such as Levenshtein Distance and
+                  k-Nearest neighbor
+                </p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <span class="badge me-2"> Kotlin </span>
+                  <span class="badge me-2"> ML </span>
                 </div>
               </div>
             </div>
@@ -184,6 +223,7 @@
         </div>
       </section>
       <!-- /projectSection -->
+      <hr class="special-border" />
 
       <section>
         <h2>Experiences</h2>
@@ -210,6 +250,17 @@
                   <span class="badge me-2"> TypeScript </span>
                   <span class="badge me-2"> Prisma ORM </span>
                   <span class="badge me-2"> Postman </span>
+                  <span>
+                    <button class="github-holder">
+                      <a
+                        class="nav-link"
+                        href="https://github.com/Northeastern-Electric-Racing/FinishLine"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github bi-card me-4"></i>
+                      </a>
+                    </button>
+                  </span>
                 </div>
               </div>
             </div>
@@ -219,27 +270,25 @@
       </section>
       <!-- /experienceSection -->
     </div>
-    <footer class="footer full-width-footer pull-right mt-auto py-3 bg-light">
-      <div class="container">
+    <footer class="footer full-width-footer py-3">
+      <div class="container text-end">
         <div class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Color
+            <!-- Color did not want to move left to align with the dropdown so this was my fix -->
+            Color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu dropdown-menu-end">
             <li>
               <button type="button" class="btn red-button-special"></button>
             </li>
             <li>
               <button type="button" class="btn orange-button-special"></button>
-            </li>
-            <li>
-              <button type="button" class="btn yellow-button-special"></button>
             </li>
             <li>
               <button type="button" class="btn green-button-special"></button>
@@ -250,7 +299,10 @@
             <li>
               <button type="button" class="btn purple-button-special"></button>
             </li>
-          </ul>
+            <li>
+              <button type="button" class="btn pink-button-special"></button>
+            </li>
+          </div>
         </div>
       </div>
     </footer>

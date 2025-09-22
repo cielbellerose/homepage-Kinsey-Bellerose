@@ -1,0 +1,16 @@
+AI Used: Claude Opus 4.1 
+
+I'm creating a personal website. I have two pages, index.html and education.html. 
+Index.html showcases my projects and experiences and education shows my degrees, coursework, 
+and activities. I want a third page, skills.html, to showcase my skills in different categories. 
+I want this to be done in a creative eye catching way, but also be quickly readable for potential 
+employers. I'm going to give you the code for index and education for reference, and I would like 
+you to keep the same nav bar and footer, but everything else is up to you. The footer has a dropdown 
+color selector and I would like that implemented somewhere on the screen as well (for ex: on index 
+clicking the color selector changes the color of tags). Make something able to change color with that 
+feature. Here are the skills I would like you to present. "Programming Languages: TypeScript Java Python
+C++ CSS Frontend: React Next.js Backend: Node.js Express.js Prisma PostgreSQL Developer Tools: Vercel Git
+Postman Certifications: SANS GFACT" This is the js for the color selector and dark mode selector. 
+Create the full skills.html webpage for me. Put the css in a separate file. 
+
+- attached index.html, education.html, main.js

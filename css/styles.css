@@ -1,81 +1,85 @@
 h3,
 h2 {
-  margin: 40px 0px 20px 0px;
-  font-weight: 600;
+  margin: 70px 0px 30px 0px;
+  font-weight: 800;
 }
 
-.navbar .container-fluid {
-  margin: 0px 60px;
+.nav-item.dropdown {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.image-title {
+  font-size: 5vw;
+  font-weight: 800;
+  color: #37586f;
+  text-shadow: 4px 4px 4px white;
 }
 
 body {
   padding-top: 60px;
   background-color: #ffffff;
-}
-
-.badge {
-  background-color: #31a5ee;
-  text-align: center;
-  padding: 10px;
-  font-size: 13px;
-  font-weight: 500;
   transition: all 0.3s ease;
-}
-
-.badge:hover {
-  transform: scale(1.05);
-}
-
-.card-body {
-  background-color: #d9d9d9;
-}
-
-.image-title {
-  font-size: 5vw;
-  color: rgb(167, 231, 255);
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.edu-title {
-  margin-top: 80px;
-}
-
-.container-home-intro {
-  background-image: url("../images/scotland.png");
-  background-size: cover;
-  background-position: center;
-  margin-top: -5px;
-  height: 450px;
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-.container-education {
-  background-image: url("../images/boston.png");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 100%;
-  margin-top: 15px;
-  padding-bottom: 30px;
 }
 
 .container-intro-body {
   margin: 0px 70px;
 }
 
-.intro-hi {
-  margin: 0px;
-  margin-top: 45px;
-  font-size: 25px;
-  color: rgb(55, 55, 55);
+.intro {
+  margin-top: 15px;
+  font-size: 2vw;
+  color: white;
   font-weight: 600;
+  text-shadow: 2px 2px 4px black;
 }
 
-.intro {
-  font-size: 25px;
-  color: rgb(55, 55, 55);
+.navbar-brand {
+  color: black;
+  transition: all 0.3s ease;
+}
+.nav-link {
+  color: black;
+  transition: all 0.3s ease;
   font-weight: 600;
+}
+.navbar {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.btn.moon-button {
+  color: black;
+}
+
+.btn.moon-button:hover {
+  transform: scale(1.1);
+}
+
+
+/* header icons */
+.bi.bi-github,
+.bi.bi-linkedin {
+  font-size: 30px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.bi.bi-github:hover,
+.bi.bi-linkedin:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+
+/* Index.html */
+.container-home-intro {
+  background-image: url("../images/clouds.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -5px;
+  height: 450px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .intro-photo-container {
@@ -96,32 +100,91 @@ body {
 }
 
 .intro-img {
-  border: 4px solid black;
+  border: 6px solid black;
   background-color: black;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-#projects {
-  margin-bottom: 50px;
+.intro-hi {
+  margin: 0px;
+  margin-top: 75px;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px black;
 }
 
-#experiences {
-  margin-bottom: 50px;
+.badge {
+  background-color: #37586f;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
+.badge:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  background-color: #d9d9d9;
+}
+
+#projects, #experiences {
+  margin-bottom: 80px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 10px 20px #37586f;
+  transition: all 0.3s ease;
+}
+
+.card-body {
+  margin-top: -2px;
+  border-radius: 5px;
+}
+
+.card-img-top {
+  /* layered above the card body */
+  z-index: 3;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
 /* github icons for cards */
 .bi.bi-github.bi-card {
   font-size: 35px;
   color: black;
 }
 
-/* header icons */
-.bi.bi-github,
-.bi.bi-linkedin {
-  font-size: 30px;
-  color: black;
+hr.special-border {
+  border-top: 10px solid #37586f;
+}
+
+/* Education.html */
+.container-education {
+  background-image: url("../images/boston.png");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+hr.border-x-axis {
+  border-top: 5px solid black;
+  transition: all 0.3s ease;
+}
+
+.edu-title {
+  margin-top: 80px;
+  text-shadow: 4px 4px 4px black;
 }
 
 .bi.bi-circle-fill {
@@ -134,8 +197,37 @@ body {
   color: #bea1f7;
 }
 
+.bi.bi-circle-fill.circle-transparent {
+  color: transparent;
+}
+
 .bi.bi-circle-fill:hover {
   transform: scale(1.1);
+}
+
+.activity-section {
+  padding-bottom: 80px;
+}
+
+.card-column {
+  margin-top: 30px;
+}
+
+.github-holder {
+  position: absolute; /* ignores other badges */
+  right: -15px; /* aligns right in line with badges */
+  bottom: 2px;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.github-holder:hover {
+  transform: scale(1.1);
+}
+
+.carousel {
+  padding-top: 50px;
 }
 
 .carousel-indicators.carousel-black {
@@ -148,14 +240,22 @@ body {
 }
 
 .class-chart {
-  background-color: white;
-  padding: 30px;
+  width: 100%;
+  padding-bottom: 100px;
 }
 
 #semesters .col p {
-  font-size: 12px;
-  font-weight: 400;
-  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#semester {
+  align-items: left;
+}
+
+.degree-container {
+  padding-bottom: 20px;
 }
 
 .degree-container .degree {
@@ -176,12 +276,12 @@ body {
   margin-top: 20px;
 }
 
-.tooltip-right + .tooltip.bs-tooltip-right {
-  margin-left: -10px;
-}
-
-.tooltip-right + .tooltip.bs-tooltip-right .tooltip-arrow {
-  left: 5px;
+/* Footer */
+.full-width-footer {
+  width: 100%;
+  float: right;
+  background-color: white;
+  transition: all 0.3s ease;
 }
 
 .dropdown-menu {
@@ -202,35 +302,51 @@ body {
 
 .red-button-special,
 .red-button-special:hover {
-  background-color: red;
+  background-color: #800000;
 }
 
 .orange-button-special,
 .orange-button-special:hover {
-  background-color: orange;
-}
-
-.yellow-button-special,
-.yellow-button-special:hover {
-  background-color: yellow;
+  background-color: #6f4e37;
 }
 
 .green-button-special,
 .green-button-special:hover {
-  background-color: green;
+  background-color: #586f37;
 }
 
 .blue-button-special,
 .blue-button-special:hover {
-  background-color: blue;
+  background-color: #37586f;
 }
 
 .purple-button-special,
 .purple-button-special:hover {
-  background-color: purple;
+  background-color: #4e376f;
+}
+.pink-button-special,
+.pink-button-special:hover {
+  background-color: #9F2B68;
 }
 
-.full-width-footer {
-  width: 100%;
-  float: right;
+
+@media (max-width: 975px) {
+  .intro-img {
+    display: none;
+  }
+}
+
+/* stops vw from continuing to shrink */
+@media (max-width: 800px) {
+  .image-title {
+    font-size: 33px;
+  }
+  .intro {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  .container-intro-body .row {
+    padding-left: 0;
+    margin: 0px -40px;
+  }
 }
