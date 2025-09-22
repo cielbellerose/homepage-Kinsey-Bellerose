@@ -22,8 +22,8 @@ AI Used: Deepseek
 Prompt: can you add the javascript for this?
 - attached skills.html, skills.css
 
-
 ## Other uses of AI
+// ----------------------------------------------------------------
 AI: Deepseek
 
 Prompt: walk me through how to make this "document.querySelector(".bi.bi-github:hover").style.color = color;" work for for this ".bi.bi-github,
@@ -53,3 +53,67 @@ githubIcon.addEventListener('mouseenter', function() {
 githubIcon.addEventListener('mouseleave', function() {
     this.style.color = 'black'; // Reset to original color
 });
+
+Usage: I used the mouseleave and mouseenter for each icon
+const linkedinIcon = document.querySelector(".bi.bi-linkedin");
+linkedinIcon.addEventListener("mouseenter", () =>
+  updateCustomizableColorLinkedin(currentColor)
+);
+linkedinIcon.addEventListener("mouseleave", () =>
+  updateCustomizableColorLinkedin(currentTextMode)
+);
+and saved a variable locally to set the color with a new function that
+only updated the individual icon color.
+
+// ----------------------------------------------------------------
+AI: ChatGPT
+
+Prompt: trying to move the github icon to hug the right. Putting it in a button helped keep it on the same line as the other badges, but now I need to move it right 
+        <section>
+        <h2>Projects</h2>
+        <div id="projects" class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="project card">
+              <img
+                src="./images/portScanner.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Network Port Scanner</h5>
+                <p class="card-text">
+                  TCP Connect Scanning with interactive GUI and real-time
+                  results
+                </p>
+                <span class="badge me-2"> Python </span>
+                <span class="badge me-2"> PySide6 </span>
+                <span>
+                  <button class="github-holder">
+                    <a
+                    class="nav-link"
+                    href="https://github.com/cielbellerose"
+                    target="_blank"
+                  >
+                    <i class="bi bi-github bi-card me-4"></i>
+        ill give you my current cs if you ask. don't give me code just explain approaches to this problem
+
+Answer: 
+
+Option 1: Flexbox Container (Most Common)
+Wrap the badges and the GitHub button in a new div and apply display: flex; justify-content: space-between; align-items: center; to it. This automatically pushes the GitHub icon to the far right.
+
+Option 2: Margin Auto
+Apply margin-left: auto; to the GitHub button or its container. This pushes it as far to the right as possible within the flex or block layout.
+
+Option 3: Absolute Positioning
+Make the card body position: relative and then set the GitHub button to position: absolute; top: [value]; right: [value];. This removes it from the normal flow and pins it to a specific spot inside the card.
+
+Usage: I went with absolute positioning and added 
+.github-holder {
+  position: absolute; /* ignores other badges */
+  right: -15px; /* aligns right in line with badges */
+  bottom: 2px;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}

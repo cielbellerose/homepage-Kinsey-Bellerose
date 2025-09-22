@@ -164,6 +164,19 @@ hr.special-border {
   border-top: 10px solid #37586f;
 }
 
+.github-holder {
+  position: absolute; /* ignores other badges */
+  right: -15px; /* aligns right in line with badges */
+  bottom: 2px;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.github-holder:hover {
+  transform: scale(1.1);
+}
+
 /* Education.html */
 .container-education {
   background-image: url("../images/boston.png");
@@ -176,9 +189,7 @@ hr.special-border {
 }
 
 .activity-border-img {
-  background-image: url("../images/mountains.png");
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
   height: 250px;
   width: 130%;
   margin-top: 20px;
@@ -187,9 +198,7 @@ hr.special-border {
 }
 
 .activity-border-img2 {
-  background-image: url("../images/field.png");
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
   height: 250px;
   width: 130%;
   margin-top: -20px;
@@ -262,19 +271,6 @@ hr.border-x-axis {
 
 .card-column {
   margin-top: 30px;
-}
-
-.github-holder {
-  position: absolute; /* ignores other badges */
-  right: -15px; /* aligns right in line with badges */
-  bottom: 2px;
-  background: none;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.github-holder:hover {
-  transform: scale(1.1);
 }
 
 .carousel-control-prev-icon,
