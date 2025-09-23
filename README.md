@@ -4,7 +4,7 @@
 CS5610 Project 1 – Personal Homepage  
 
 - **Author:** Kinsey Bellerose  
-- **Class Link:** https://kinsey-bellerose.netlify.app/
+- **Website Link:** https://kinsey-bellerose.netlify.app/
 - **Course Info:** https://johnguerra.co/classes/webDevelopment_fall_2025/
 - **Design Document:** https://docs.google.com/document/d/1rfnBsF8RQb35-nA6rQmTBfWEivgEDgiaIbix_seWexo/edit?tab=t.0#heading=h.hwfv1zqp4m6o 
 
