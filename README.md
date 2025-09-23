@@ -27,8 +27,8 @@ The goal of this project is to design and implement a **personal homepage** that
 
 ### Education  
 <img width="1440" height="813" alt="Screenshot 2025-09-22 at 9 45 51 PM" src="https://github.com/user-attachments/assets/7f2cba34-ca96-4482-91fc-e2099092a2fe" />
-<img width="1440" height="811" alt="Screenshot 2025-09-22 at 9 47 15 PM" src="https://github.com/user-attachments/assets/6e18615c-19f9-4b45-a260-19bcccab79b4" />
-<img width="1440" height="685" alt="Screenshot 2025-09-22 at 9 48 18 PM" src="https://github.com/user-attachments/assets/451e19cf-66a2-4366-b810-b7013c381c1c" />
+<img width="1440" height="809" alt="Screenshot 2025-09-22 at 9 59 33 PM" src="https://github.com/user-attachments/assets/41d78454-1005-4488-9058-31bb9e18abd0" />
+<img width="1440" height="666" alt="Screenshot 2025-09-22 at 10 00 10 PM" src="https://github.com/user-attachments/assets/c5688c13-9386-4d46-95b8-15debc9f3ec8" />
 
 ### Skills (AI Generated)
 <img width="1440" height="811" alt="Screenshot 2025-09-22 at 9 48 39 PM" src="https://github.com/user-attachments/assets/894745b5-6bac-4e5f-84a6-22794a294b37" />
