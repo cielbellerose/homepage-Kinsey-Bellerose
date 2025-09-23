@@ -61,8 +61,8 @@ These demonstrate JavaScript interactivity and creative customization beyond sta
 
 ### 1. Clone the Repository  
 ```bash
-git clone <repo-url>
-cd cs5610-project1
+git clone https://github.com/cielbellerose/homepage-Kinsey-Bellerose.git
+cd homepage-Kinsey-Bellerose
 ```
 
 ### 2. Install Dependencies  
