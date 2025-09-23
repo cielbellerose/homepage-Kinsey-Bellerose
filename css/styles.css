@@ -1,6 +1,6 @@
 h3,
 h2 {
-  margin: 30px 0px 30px 0px;
+  margin: 40px 0px 30px 0px;
   font-weight: 800;
 }
 
@@ -317,6 +317,10 @@ hr.border-x-axis {
 }
 #classes {
   margin-top: 20px;
+}
+
+.image-title.skills-title {
+  color: black;
 }
 
 /* Footer */
