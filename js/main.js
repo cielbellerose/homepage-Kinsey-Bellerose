@@ -137,7 +137,7 @@ document
   .querySelector(".moon-button")
   .addEventListener("click", () => setDarkMode());
 
-// AI Generated Scripts
+// --------- AI Generated Scripts ---------
 
 // skills.js - JavaScript for Skills Page Interactivity
 

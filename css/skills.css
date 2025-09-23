@@ -45,7 +45,7 @@
 }
 
 .skill-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -127,11 +127,21 @@
   width: var(--skill-width);
 }
 
-.skill-item[data-skill="typescript"] .skill-level { --skill-width: 90%; }
-.skill-item[data-skill="java"] .skill-level { --skill-width: 85%; }
-.skill-item[data-skill="python"] .skill-level { --skill-width: 80%; }
-.skill-item[data-skill="cpp"] .skill-level { --skill-width: 75%; }
-.skill-item[data-skill="css"] .skill-level { --skill-width: 85%; }
+.skill-item[data-skill="typescript"] .skill-level {
+  --skill-width: 90%;
+}
+.skill-item[data-skill="java"] .skill-level {
+  --skill-width: 85%;
+}
+.skill-item[data-skill="python"] .skill-level {
+  --skill-width: 80%;
+}
+.skill-item[data-skill="cpp"] .skill-level {
+  --skill-width: 75%;
+}
+.skill-item[data-skill="css"] .skill-level {
+  --skill-width: 85%;
+}
 
 /* Frontend Card */
 .skill-tags {
@@ -170,7 +180,11 @@
 }
 
 .stack-item:hover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   transform: translateX(5px);
 }
 
@@ -197,7 +211,11 @@
 }
 
 .flow-item:hover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   transform: scale(1.05);
 }
 
@@ -237,7 +255,11 @@
 }
 
 .tool-item:hover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   transform: rotate(-5deg) scale(1.1);
 }
 
@@ -252,7 +274,11 @@
   gap: 20px;
   padding: 20px;
   border-radius: 15px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   border: 2px solid #667eea;
   transition: all 0.3s ease;
 }
@@ -403,7 +429,11 @@
   gap: 10px;
   padding: 25px;
   border-radius: 15px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   transition: all 0.3s ease;
 }
 
@@ -455,7 +485,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -464,7 +495,8 @@
 }
 
 @keyframes slideHorizontal {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -515,19 +547,19 @@ body[data-theme="dark"] .showcase-item {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .backend-flow {
     flex-direction: column;
   }
-  
+
   .flow-connector {
     transform: rotate(90deg);
   }
-  
+
   .tools-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .skills-title {
     font-size: 2.5rem;
   }
@@ -550,7 +582,7 @@ hr.special-border:hover {
 /* Additional CSS for enhanced animations */
 .custom-tooltip {
   position: absolute;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
@@ -563,14 +595,14 @@ hr.special-border:hover {
 }
 
 .custom-tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(0,0,0,0.8) transparent transparent transparent;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
 }
 
 /* Enhanced focus styles for accessibility */

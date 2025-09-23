@@ -117,3 +117,20 @@ Usage: I went with absolute positioning and added
   border: none;
   transition: all 0.3s ease;
 }
+
+// ----------------------------------------------------------------
+Note: README was constructed by ChatGPT given all of the files in
+this repo. I do not yet have github CoPilot installed in my VSCode
+so this was the simplest option. 
+
+Prompt "Description CS5610 Project 1 Author Class Link: tbd Course information @ https://johnguerra.co/classes/webDevelopment_fall_2025/ 
+## Project Objective ## Creative Addition ## Screenshots ## Instructions to Build" Wait for me to give you the files. Don't respond yet""
+I gave it all of the files and told it to continue to wait to respond, including
+the project description and rubric. It gave me a README very similar to the one up
+current, and added placeholders for screenshots and links. It had some odd build Instructions
+that were more focused on re-running linting and prettier formatting so I had it rewrite that part. 
+
+I ended up moving the screenshots further up and having it add a technologies section.
+I also didn't love how it would put text and then a link, like:
+- **Design Document:** [Google Doc](https://docs.google.com/document/d/1rfnBsF8RQb35-nA6rQmTBfWEivgEDgiaIbix_seWexo/edit?tab=t.0#heading=h.hwfv1zqp4m6o)  
+so I replaced those with just the link
