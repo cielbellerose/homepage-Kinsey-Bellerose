@@ -88,8 +88,13 @@ Open the URL shown in your terminal (default: [http://localhost:8080](http://loc
 
 ---
 
-## 🎥 Video Demonstration  
-📺   
+## Video Demonstration  
+https://www.loom.com/share/53b8e9c052524068b0f3eb7bf1134577?sid=fee8778e-b07e-4d11-a90d-f7d77cdeae46
+
+--
+
+## Slides
+https://docs.google.com/presentation/d/1BV2IOS-QVZRf0hIb_pgjbBad7NMYuBcFC0nonKzFRHY/edit?usp=sharing
 
 ---
 
